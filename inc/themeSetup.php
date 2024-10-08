@@ -29,3 +29,14 @@
 
     //Remove auto P from CF7
     add_filter('wpcf7_autop_or_not', '__return_false');
+
+
+    // Add the custom lost password link above the login button
+    function add_lost_password_above_button() {
+        echo '<p class="woocommerce-LostPassword lost_password inpd">';
+        echo '<a href="' . esc_url( wp_lostpassword_url() ) . '">';
+        echo esc_html__('Forgot password?', 'woocommerce');
+        echo '</a>';
+        echo '</p>';
+    }
+    add_action('woocommerce_login_form', 'add_lost_password_above_button', 15);
