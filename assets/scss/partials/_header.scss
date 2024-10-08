@@ -1,0 +1,137 @@
+header {
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    transition: all 333ms ease;
+    z-index: 1080;
+    &.scrolled {
+        background: $white;
+    }
+    .row {
+        align-items: center;
+    }
+    .upper {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: flex-end;
+        width: fit-content;
+        margin-left: auto;
+        padding: 20px 0;
+        padding-left: 60px;
+        margin-right: 50px;
+    }
+    .buttons {
+        a {
+            padding-right: 25px;
+            &:hover {
+                padding-right: 25px;
+            }
+            &:first-child {
+                margin-right: 15px;
+            }
+        }
+        a:after {
+            all: unset;
+        }
+    }
+    &.white {
+        img {
+            &.main {
+                display: block;
+            }
+            &.alt {
+                display: none;
+            }
+        }
+        .upper {
+            border-bottom: 1px solid rgba($white, 0.5);
+        }
+        .lower {
+            ul#menu-main-menu {
+                li {
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    &.dark-blue {
+        .basket {
+            svg {
+                path {
+                    fill: $dark-blue;
+                }
+            }
+        }
+        img {
+            &.main {
+                display: none;
+            }
+            &.alt {
+                display: block;
+            }
+        }
+        .upper {
+            border-bottom: 1px solid rgba($dark-blue, 0.5);
+            .buttons {
+                a {
+                    background: $dark-blue;
+                    border-color: $dark-blue;
+                    color: $white;
+                }
+            }
+        }
+        .lower {
+            ul#menu-main-menu {
+                li {
+                    a {
+                        color: $dark-blue;
+                        border-color: $dark-blue;
+                    }
+                }
+            }
+        }
+    }
+    &.scrolled {
+        background: $white;
+        box-shadow: 0px 5px 10px #00000025;
+        .col-8 .upper {
+            border-color: $dark-blue;
+            .buttons {
+                a {
+                    background: $dark-blue;
+                    border-color: $dark-blue;
+                    color: $white;
+                }
+            }
+        }
+        .basket {
+            svg {
+                path {
+                    fill: $dark-blue;
+                }
+            }
+        }
+        .col-8 .lower {
+            ul#menu-main-menu {
+                li {
+                    a {
+                        color: $dark-blue;
+                    }
+                }
+            }
+        }
+        .col-4 {
+            img {
+                &.main {
+                    display: none;
+                }
+                &.alt {
+                    display: block;
+                }
+            }
+        }
+    }
+}

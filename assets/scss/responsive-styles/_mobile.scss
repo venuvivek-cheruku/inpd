@@ -1,0 +1,86 @@
+@media (max-width: 993px) {
+    .container {
+        padding: 0 25px;
+    }
+    header {
+        background: $white;
+    }
+    header.white img.main {
+        display: none;
+    }
+    header.white img.alt {
+        display: block;
+    }
+    header .basket {
+        margin-left: auto;
+        margin-right: 10px;
+        svg {
+            width: 25px;
+            height: 23px;
+            path {
+                fill: $dark-blue;
+            }
+        }
+    }
+    header #menu-main-menu-1 {
+        padding: 40px 0;
+        a {
+            width: fit-content;
+            font-size: 23px;
+            margin: 0 auto;
+            color: $dark-blue;
+            text-transform: uppercase;
+            font-family: 'GilroySemiBold', sans-serif;
+        }
+    }
+    header button#nav-btn {
+        bordeR: unset;
+    }
+    header button#nav-btn:focus,
+    header button#nav-btn:active {
+        box-shadow: unset;
+    }
+    .line {
+        fill: none;
+        stroke: $dark-blue;
+        stroke-width: 6;
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1)
+    }
+    header.dark-blue {
+        .line {
+            stroke: $dark-blue;
+        }
+    }
+    .line1 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6
+    }
+    .line2 {
+        stroke-dasharray: 60 60;
+        stroke-width: 6
+    }
+    .line3 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6
+    }
+    .opened .line1 {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+        stroke-width: 6
+    }
+    .opened .line2 {
+        stroke-dasharray: 1 60;
+        stroke-dashoffset: -30;
+        stroke-width: 6
+    }
+    .opened .line3 {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+        stroke-width: 6
+    }
+    header.white img.main,
+    header.white img.alt {
+        width: 120px;
+        height: auto;
+    }
+}
