@@ -1,0 +1,98 @@
+section.woo-login-container {
+  .title {
+    text-align: center;
+  }
+
+  .login-signup-container {
+    .woocommerce-error {
+      border-top-color: $dark-blue;
+      background: transparent;
+      font-size: 16px;
+      box-shadow: 1px 2px #0000000d;
+    }
+
+    margin-top: 4rem;
+    h2 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    .woocommerce-form label {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .woocommerce .col2-set .col-1,
+    .woocommerce-page .col2-set .col-1,
+    .woocommerce .col2-set .col-2,
+    .woocommerce-page .col2-set .col-2 {
+      width: 45%;
+    }
+
+    .woocommerce-LostPassword.lost_password:not(.inpd) {
+      display: none !important;
+    }
+
+    .woocommerce-form-login__submit,
+    .woocommerce-form-register__submit {
+      width: fit-content;
+      padding: 10px 25px;
+      padding-right: 50px;
+      text-decoration: none;
+      outline: unset !important;
+      border-radius: 20px;
+      border: 1px solid $dark-blue;
+      position: relative;
+      transition: all 333ms ease;
+      background: $dark-blue;
+      color: $white;
+      &:hover {
+        padding-right: 68px;
+      }
+      &:after {
+        content: "";
+        background: url("/wp-content/uploads/2024/06/arrow-left-white.svg")
+          no-repeat center center / contain;
+        width: 32px;
+        height: 14px;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      &.outline {
+        background: transparent;
+        color: $white;
+        &:after {
+          background: url("/wp-content/uploads/2024/07/nav-arrow-right.svg")
+            no-repeat center center / contain;
+        }
+      }
+    }
+
+    .woocommerce form.checkout_coupon,
+    .woocommerce form.login,
+    .woocommerce form.register {
+      border: none;
+      padding: 0px;
+    }
+
+    .woocommerce form .form-row input.input-text,
+    .woocommerce form .form-row textarea {
+      padding: 0.5rem;
+    }
+  }
+
+  .woocommerce-privacy-policy-text {
+    opacity: 0.65;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .lost_password.inpd a {
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+  }
+}

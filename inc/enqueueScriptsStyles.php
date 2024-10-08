@@ -7,6 +7,7 @@
             wp_enqueue_style('slickStyle', get_template_directory_uri().'/assets/css/slick.css');
             wp_enqueue_style('slickTheme', get_template_directory_uri().'/assets/css/slick-theme.css');
             wp_enqueue_style('mainCustomStyles', get_template_directory_uri().'/assets/css/main.min.css');
+            wp_enqueue_style('tempCustomStyles', get_template_directory_uri().'/assets/css/main.css');
 
 
             //Scripts

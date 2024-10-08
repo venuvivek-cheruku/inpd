@@ -690,6 +690,95 @@ header.scrolled .col-4 img.alt {
   display: block;
 }
 
+section.woo-login-container .title {
+  text-align: center;
+}
+section.woo-login-container .login-signup-container {
+  margin-top: 4rem;
+}
+section.woo-login-container .login-signup-container .woocommerce-error {
+  border-top-color: #102E43;
+  background: transparent;
+  font-size: 16px;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.0509803922);
+}
+section.woo-login-container .login-signup-container h2 {
+  font-size: 28px;
+  line-height: 36px;
+}
+section.woo-login-container .login-signup-container .woocommerce-form label {
+  font-size: 15px;
+  font-weight: 600;
+}
+section.woo-login-container .login-signup-container .woocommerce .col2-set .col-1,
+section.woo-login-container .login-signup-container .woocommerce-page .col2-set .col-1,
+section.woo-login-container .login-signup-container .woocommerce .col2-set .col-2,
+section.woo-login-container .login-signup-container .woocommerce-page .col2-set .col-2 {
+  width: 45%;
+}
+section.woo-login-container .login-signup-container .woocommerce-LostPassword.lost_password:not(.inpd) {
+  display: none !important;
+}
+section.woo-login-container .login-signup-container .woocommerce-form-login__submit,
+section.woo-login-container .login-signup-container .woocommerce-form-register__submit {
+  width: fit-content;
+  padding: 10px 25px;
+  padding-right: 50px;
+  text-decoration: none;
+  outline: unset !important;
+  border-radius: 20px;
+  border: 1px solid #102E43;
+  position: relative;
+  transition: all 333ms ease;
+  background: #102E43;
+  color: #ffffff;
+}
+section.woo-login-container .login-signup-container .woocommerce-form-login__submit:hover,
+section.woo-login-container .login-signup-container .woocommerce-form-register__submit:hover {
+  padding-right: 68px;
+}
+section.woo-login-container .login-signup-container .woocommerce-form-login__submit:after,
+section.woo-login-container .login-signup-container .woocommerce-form-register__submit:after {
+  content: "";
+  background: url("/wp-content/uploads/2024/06/arrow-left-white.svg") no-repeat center center/contain;
+  width: 32px;
+  height: 14px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+section.woo-login-container .login-signup-container .woocommerce-form-login__submit.outline,
+section.woo-login-container .login-signup-container .woocommerce-form-register__submit.outline {
+  background: transparent;
+  color: #ffffff;
+}
+section.woo-login-container .login-signup-container .woocommerce-form-login__submit.outline:after,
+section.woo-login-container .login-signup-container .woocommerce-form-register__submit.outline:after {
+  background: url("/wp-content/uploads/2024/07/nav-arrow-right.svg") no-repeat center center/contain;
+}
+section.woo-login-container .login-signup-container .woocommerce form.checkout_coupon,
+section.woo-login-container .login-signup-container .woocommerce form.login,
+section.woo-login-container .login-signup-container .woocommerce form.register {
+  border: none;
+  padding: 0px;
+}
+section.woo-login-container .login-signup-container .woocommerce form .form-row input.input-text,
+section.woo-login-container .login-signup-container .woocommerce form .form-row textarea {
+  padding: 0.5rem;
+}
+section.woo-login-container .woocommerce-privacy-policy-text {
+  opacity: 0.65;
+  font-size: 14px;
+  line-height: 18px;
+}
+section.woo-login-container .lost_password.inpd a {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
 section.contact-top {
   padding: 150px 0;
   padding-top: 200px;

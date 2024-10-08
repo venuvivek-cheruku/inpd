@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="title">
+                <div class="title text-align-center">
                     <h1>
                         <?php 
                         // Check if user is logged in or not
@@ -20,10 +20,8 @@
                     </h1>
                 </div>
             </div>
-            <div class="col-12 col-lg-10">
-                <div class="content">
-                    <?php echo do_shortcode('[woocommerce_my_account]'); ?>
-                </div>
+            <div class="login-signup-container">
+                <?php echo do_shortcode('[woocommerce_my_account]'); ?>
             </div>
         </div>
     </div>
