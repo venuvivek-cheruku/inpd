@@ -711,6 +711,15 @@ header.scrolled .col-4 img.alt {
   display: block;
 }
 
+section.woo-login-container {
+  padding: 70px 0;
+  padding-top: 200px;
+}
+@media screen and (max-width: 768px) {
+  section.woo-login-container {
+    padding-top: 150px;
+  }
+}
 section.woo-login-container .title {
   text-align: center;
 }
@@ -736,6 +745,20 @@ section.woo-login-container .login-signup-container .woocommerce-page .col2-set 
 section.woo-login-container .login-signup-container .woocommerce .col2-set .col-2,
 section.woo-login-container .login-signup-container .woocommerce-page .col2-set .col-2 {
   width: 45%;
+}
+@media screen and (max-width: 768px) {
+  section.woo-login-container .login-signup-container .woocommerce .col2-set .col-1,
+  section.woo-login-container .login-signup-container .woocommerce-page .col2-set .col-1,
+  section.woo-login-container .login-signup-container .woocommerce .col2-set .col-2,
+  section.woo-login-container .login-signup-container .woocommerce-page .col2-set .col-2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.woo-login-container .login-signup-container .woocommerce .col2-set .col-2,
+  section.woo-login-container .login-signup-container .woocommerce-page .col2-set .col-2 {
+    margin-top: 4rem;
+  }
 }
 section.woo-login-container .login-signup-container .woocommerce-LostPassword.lost_password:not(.inpd) {
   display: none !important;
@@ -802,7 +825,12 @@ section.woo-login-container .lost_password.inpd a {
 
 section.woo-single-container {
   padding: 70px 0;
-  padding-top: 150px;
+  padding-top: 230px;
+}
+@media screen and (max-width: 768px) {
+  section.woo-single-container {
+    padding-top: 120px;
+  }
 }
 
 section.woo-cart-container {

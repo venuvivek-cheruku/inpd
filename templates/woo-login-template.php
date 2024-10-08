@@ -3,7 +3,7 @@
     get_header();
 ?>
 
-<section class="woo-login-container centered-top">
+<section class="woo-login-container ">
     <div class="container">
         <div class="row">
             <div class="col-12">
