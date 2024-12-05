@@ -41,8 +41,8 @@
     }
     add_action('woocommerce_login_form', 'add_lost_password_above_button', 15);
 
-    // Remove product tabs from the single product page
-    remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+    // // Remove product tabs from the single product page
+    // remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
 
     // Filter to change the 'Stock' header to 'Spaces' in the variant table
 add_filter('pvtfw_columns_labels', function($default) {
